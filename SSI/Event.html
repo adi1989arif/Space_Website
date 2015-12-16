@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Events page</title>
+    <meta charset="utf-8" />
+    <!--<link rel="stylesheet" type="text/css" href="css/list.css" media="screen" />-->
+    <meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0" />
+
+    <script
+            src="http://maps.googleapis.com/maps/api/js">
+    </script>
+
+    <script>
+        var myCenter=new google.maps.LatLng(39.9276022,-105.1207595);
+
+        function initialize()
+        {
+            var mapProp = {
+                center:myCenter,
+                zoom:3,
+                mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+
+            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+            var marker1=new google.maps.Marker({
+                position:myCenter,
+            });
+
+            marker1.setMap(map);
+
+            var infowindow = new google.maps.InfoWindow({
+                content:"Event 1"
+            });
+
+            infowindow.open(map,marker1);
+
+//            google.maps.event.addListener(marker1,'click',function() {
+//                map.setZoom(9);
+//                map.setCenter(marker1.getPosition());
+//            });
+
+
+// 2
+            myCenter=new google.maps.LatLng(47.609973,-122.3376882);
+            var marker2=new google.maps.Marker({
+                position:myCenter,
+            });
+            marker2.setMap(map);
+
+            var infowindow = new google.maps.InfoWindow({
+                content:"Event 2"
+            });
+            infowindow.open(map,marker2);
+
+//            google.maps.event.addListener(marker2,'click',function() {
+//                map.setZoom(9);
+//                map.setCenter(marker2.getPosition());
+//            });
+
+
+// 3
+            myCenter=new google.maps.LatLng(42.3497085,-71.1021441);
+            var marker3=new google.maps.Marker({
+                position:myCenter,
+            });
+            marker3.setMap(map);
+
+            var infowindow = new google.maps.InfoWindow({
+                content:"Event 3"
+            });
+            infowindow.open(map,marker3);
+//            google.maps.event.addListener(marker3,'click',function() {
+//                map.setZoom(9);
+//                map.setCenter(marker3.getPosition());
+//            });
+
+
+// 4
+            myCenter=new google.maps.LatLng(29.7521701,-95.3599976);
+            var marker4=new google.maps.Marker({
+                position:myCenter,
+            });
+            marker4.setMap(map);
+
+            var infowindow = new google.maps.InfoWindow({
+                content:"Event 4"
+            });
+            infowindow.open(map,marker4);
+//            google.maps.event.addListener(marker4,'click',function() {
+//                map.setZoom(9);
+//                map.setCenter(marker4.getPosition());
+//            });
+
+// 5
+            myCenter=new google.maps.LatLng(33.6056711,-112.4052386);
+            var marker5=new google.maps.Marker({
+                position:myCenter,
+            });
+            marker5.setMap(map);
+
+            var infowindow = new google.maps.InfoWindow({
+                content:"Event 5"
+            });
+            infowindow.open(map,marker5);
+
+//            google.maps.event.addListener(marker5,'click',function() {
+//                map.setZoom(9);
+//                map.setCenter(marker5.getPosition());
+//            });
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+
+<body>
+
+<br>
+<div id="googleMap" style="width:800px; height:380px;"></div>
+<br>
+
+<article>
+<div>
+    <h3>SEDS SpaceVision 2015</h3>
+    <p>November 12 - November 15</p>
+    <p>Boston University’s Metcalf Trustee Center, 1 Silber Way</p>
+    <p>Boston, MA 02215 United States</p>
+
+    <br>
+
+    <h3>SpaceCom 2015</h3>
+    <p>November 17 - November 19</p>
+    <p>George R. Brown Convention Center</p>
+    <p>Houston, TX United States</p>
+
+    <br>
+
+    <h3>Space Access</h3>
+    <p>April 7, 2016 - April 9, 2016</p>
+    <p>Unnamed Venue</p>
+    <p>Phoenix, AZ United States</p>
+
+    <br>
+
+    <h3>International Space Development Conference</h3>
+    <p>May 18, 2016 - May 22, 2016</p>
+    <p>Sheraton Puerto Rico Hotel & Casino, 200 Convention Boulevard</p>
+    <p>San Juan, 00907 Puerto Rico</p>
+
+    <br>
+
+    <h3>Next-Generation Suborbital Researchers Conference</h3>
+    <p>June 2, 2016 - June 4, 2016</p>
+    <p>The Omni Interlocken Resort, 500 Interlocken Blvd</p>
+    <p>Broomfield, CO 80021 United States</p>
+
+    <br>
+
+    <h3>NewSpace 2016</h3>
+    <p>June 21, 2016 - June 23, 2016</p>
+    <p>Motif Seattle Hotel, 1415 5th Ave</p>
+    <p>Seattle, WA 98101 United States</p>
+
+</div>
+</article>
+
+
+<footer>
+    <p>Copyright &copy; Adiba Arif</p>
+</footer>
+
+</body>
+</html>
