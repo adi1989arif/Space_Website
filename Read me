@@ -1,0 +1,53 @@
+SPACE WEBSITE
+
+
+CONTENTS OF THIS FILE
+---------------------
+   
+ * Introduction
+ * Requirements
+ * Start file
+
+INTRODUCTION
+------------
+
+This website is an interactive mobile application designed to teach students or any individual about space. The app will be modified and available for download on this page once released in April of 2016.
+
+
+REQUIREMENTS
+------------
+
+This project requires:
+
+ * PHP installed in the system in order to get the email/contact-us page working.
+
+
+START
+------------
+
+	*	index.html in the SSI folder is the main file.
+	*	In order to launch the website, click on index.html file.
+	*	The files in the protected folder are used to demonstrate 505 error and a password protected page which can be only accessed by an RIT student. The sample link is available in the Resources page (Resources.html, under the documentation part).
+
+FILES
+------------
+
+* protected folder: welcome.html and welcome.css
+* SSI folder:
+	⁃	ndex.html (main file)
+	⁃	Asteroids.html
+	⁃	Astronomy.htlm
+	⁃	Blackhole.html
+	⁃	Contact.html
+	⁃	Dwarf.html
+	⁃	Earth.html
+	⁃	Entertainment.html
+	⁃	Error.html
+	⁃	Event.html
+	⁃	formmail.php
+	⁃	Galaxy.html
+	⁃	Gallery.html
+	⁃	Mars.html
+	⁃	News.html
+	⁃	Resources.html
+	⁃	Sun.html
